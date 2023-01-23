@@ -1,4 +1,5 @@
-// todo: think of extracting error models
+const { NotFound, BadRequest } = require("../configs/errors");
+
 const data = {
   users: require("../models/users.json"),
   setUsers: function (usersDB) {
@@ -15,7 +16,7 @@ const getUserById = (req, res) => {
   const user = data.users.find((i) => i.id === userId);
 
   if (!user) {
-    res.status(404).json({ data: `user with id ${userId} not found !` });
+    NotFound(res, userId);
   }
 
   res.json(user);
@@ -26,7 +27,7 @@ const deleteUser = (req, res) => {
   const user = data.users.find((i) => i.id == userId);
 
   if (!user) {
-    res.status(400).json({ data: `user with id ${userId} not found !` });
+    BadRequest(res, userId);
   }
 
   // reset db
@@ -41,7 +42,7 @@ const updateUser = (req, res) => {
   const user = data.users.find((i) => i.id == userId);
 
   if (!user) {
-    res.status(400).json({ data: `user with id ${userId} not found !` });
+    BadRequest(res, userId);
   }
 
   user.firstName = req.body.firstName;
@@ -62,7 +63,7 @@ const createUser = (req, res) => {
 
   data.users.push(newUser);
 
-  res.json(newUser);
+  res.status(201).json(newUser);
 };
 
 module.exports = {
