@@ -1,18 +1,73 @@
-{"firstName":"aba he 1","lastName":"aeeee"}
-{"id":2,"firstName":"aba he 1","lastName":"aeeee"}
-{"firstName":"aba he 1","lastName":"aeeee"}
-{"id":3,"firstName":"aba he 1","lastName":"aeeee"}
-{"id":4,"firstName":"aba he 1","lastName":"aeeee"}
-{"firstName":"aba he 1","lastName":"aeeee"}
-{"firstName":"aba he 1","lastName":"aeeee"}
-{"id":5,"firstName":"aba he 1","lastName":"aeeee"}
-{"firstName":"aba he 1","lastName":"aeeee"}
-{"id":6,"firstName":"aba he 1","lastName":"aeeee"}
-{"firstName":"aba he 1","lastName":"aeeee"}
-{"id":7,"firstName":"aba he 1","lastName":"aeeee"}
-{"id":8,"firstName":"aba he 1","lastName":"aeeee"}
-{"firstName":"aba he 1","lastName":"aeeee"}
-{"firstName":"aba he 1","lastName":"aeeee"}
-{"id":9,"firstName":"aba he 1","lastName":"aeeee"}
-{"firstName":"aba he 1","lastName":"aeeee"}
-{"id":2,"firstName":"aba he 1","lastName":"aeeee"}
+{"request":{}}
+{"response":"Error Message: undefined"}
+{"request":{}}
+{"response":"Error Message: Error: this is from users controller !"}
+{"request":{}}
+{"response":{}}
+{"response":"{}"}
+{"request":{}}
+{}
+{"request":{}}
+{}
+{"request":{}}
+{"response":"this is from users controller !"}
+{"request":{}}
+{"response":"Cannot read properties of undefined (reading 'send')"}
+{"request":{}}
+{"request":{}}
+{"response":"Cannot read properties of undefined (reading 'send')"}
+{"request":{}}
+{"response":"Cannot read properties of undefined (reading 'send')"}
+{"request":{}}
+{"response":"Cannot read properties of undefined (reading 'send')"}
+{"request":{}}
+{"response":"Cannot read properties of undefined (reading 'send')"}
+{"request":{}}
+{"request":{}}
+{"response":"wejweifwen"}
+{"request":{}}
+{"response":"this is from wrapper !"}
+{"request":{}}
+{"response":"This is a custom error !"}
+{"request":{}}
+{"request":{}}
+{"response":"This is a custom error !"}
+{"request":{"firstName":"aba he 1","lastName":""}}
+{"request":{"firstName":"aba he 1","lastName":""}}
+{"response":[{"message":"\"lastName\" is not allowed to be empty","path":["lastName"],"type":"string.empty","context":{"label":"lastName","value":"","key":"lastName"}}]}
+{"response":"[{\"message\":\"\\\"lastName\\\" is not allowed to be empty\",\"path\":[\"lastName\"],\"type\":\"string.empty\",\"context\":{\"label\":\"lastName\",\"value\":\"\",\"key\":\"lastName\"}}]"}
+{"response":"Operation Successfull"}
+{"response":"Cannot set headers after they are sent to the client"}
+{"request":{"firstName":"aba he 1","lastName":""}}
+{"response":["\"lastName\" is not allowed to be empty"]}
+{"response":"[\"\\\"lastName\\\" is not allowed to be empty\"]"}
+{"response":"Operation Successfull"}
+{"response":"Cannot set headers after they are sent to the client"}
+{"request":{"firstName":"aba he 1","lastName":""}}
+{"response":["message: \"lastName\" is not allowed to be empty"]}
+{"response":"[\"message: \\\"lastName\\\" is not allowed to be empty\"]"}
+{"response":"Operation Successfull"}
+{"response":"Cannot set headers after they are sent to the client"}
+{"request":{"firstName":"aba he 1","lastName":""}}
+{"response":[null]}
+{"response":"[null]"}
+{"response":"Operation Successfull"}
+{"response":"Cannot set headers after they are sent to the client"}
+{"request":{"firstName":"aba he 1","lastName":""}}
+{"response":[{"message":"\"lastName\" is not allowed to be empty","path":["lastName"],"type":"string.empty","context":{"label":"lastName","value":"","key":"lastName"}}]}
+{"response":"Operation Successfull"}
+{"response":"[{\"message\":\"\\\"lastName\\\" is not allowed to be empty\",\"path\":[\"lastName\"],\"type\":\"string.empty\",\"context\":{\"label\":\"lastName\",\"value\":\"\",\"key\":\"lastName\"}}]"}
+{"response":"Cannot set headers after they are sent to the client"}
+{"request":{"firstName":"aba he 1","lastName":"kdkdkdk"}}
+{"response":"Operation Successfull"}
+{"request":{"firstName":"aba he 1","lastName":"kdkdkdk"}}
+{"response":{"firstName":"aba he 1","lastName":"kdkdkdk"}}
+{"response":"{\"firstName\":\"aba he 1\",\"lastName\":\"kdkdkdk\"}"}
+{"request":{"firstName":"aba he 1","lastName":"kdkdkdk"}}
+{"response":"ekekeke"}
+{"request":{"firstName":"aba he 1","lastName":"kdkdkdk"}}
+{"response":"{\"data\":\"somfffjfj\"}"}
+{"response":{"data":"somfffjfj"}}
+{"request":{"firstName":"aba he 1","lastName":"kdkdkdk"}}
+{"response":{"data":"somfffjfj"}}
+{"response":"{\"data\":\"somfffjfj\"}"}

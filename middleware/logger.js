@@ -10,19 +10,16 @@ async function createLogEntry(logItem) {
     await fsPromises.mkdir(folderPath);
   }
 
-  await fsPromises.appendFile(
-    path.join(folderPath, fileName),
-    JSON.stringify(logItem) + "\n"
-  );
+  await fsPromises.appendFile(path.join(folderPath, fileName), logItem + "\n");
 }
 
 const log = (req, res, next) => {
-  createLogEntry(req.body);
+  createLogEntry(JSON.stringify({ request: req.body }));
 
   let oldSend = res.send;
   res.send = function (data) {
-    createLogEntry(JSON.parse(data));
-    oldSend.apply(res, data);
+    createLogEntry(JSON.stringify({ response: data }));
+    oldSend.apply(res, arguments);
   };
 
   next();
